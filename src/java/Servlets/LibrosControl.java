@@ -62,15 +62,17 @@ RegistroLibros registroLibros;
                                 "<th scope=\"col\">AÑO DE FABRICACION </th> \n" +
                              " </tr></thead>");  
             respuesta.println("<tbody>");
-            for (int i = 0; i < LibrossRegistrados.length; i++){
-                    if(LibrossRegistrados[i].getCodigo().isEmpty()){
+   for (int i = 0; i < LibrossRegistrados.length; i++){
+                    if(! LibrossRegistrados[i].getCodigo().isEmpty()){
                        respuesta.println("<tr><td>" + LibrossRegistrados[i].getCodigo()+ "</td>");
-                       respuesta.println("<td>" + LibrossRegistrados[i].getNombre() + "</td>");
-                       respuesta.println("<td>" +LibrossRegistrados[i].getTipoDePasta()+ "</td>");
+                       respuesta.println("<td>" +  LibrossRegistrados[i].getNombre() + "</td>");
                        respuesta.println("<td>" + LibrossRegistrados[i].getEditorial()+ "</td>");
-                          respuesta.println("<td>" + LibrossRegistrados[i].getAñoDeFabricacion()+ "</td>");
-                              
-                           
+                       respuesta.println("<td>" +  LibrossRegistrados[i].getTipoDePasta()+ "</td>");
+                          respuesta.println("<td>" +  LibrossRegistrados[i].getAñoDeFabricacion()+ "</td>");
+                          
+                              respuesta.println("<td>");
+                               
+                             
                     }
                 }
             respuesta.println("</tbody></table>");
