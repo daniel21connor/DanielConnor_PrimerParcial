@@ -1,0 +1,69 @@
+<html>
+    <head>
+       <title  >Contenedora CONNOR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+             <link rel="stylesheet" href="CSS/css.css" media="all" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#ccccff">
+      <a  lass="nav-link" href="newhtml.html" target=""> REGISTRO DE LIBROS  </a>
+  
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="NewServlet" target="_blank">REGISTRO DE MAESTROS <span class="sr-only">(current)</span></a>
+      </li>
+    
+       
+      
+       
+    
+    
+    </ul>
+ 
+  </div>
+</nav>
+  <div class="container">
+      <font face="Helvética"  size="15" color="blue">REGISTRO DE LIBROS ESCUELA CONNOR</font> 
+      <br> </br>
+      <font face="Helvética"  size="15" color="blue">REGISTRO DE LIBROS </font> 
+        <form action="NewServlet">
+     <div class="form-group">
+    
+         <label for="exampleInputEmail1"> CODIGO DEL LIBRO  </label>
+         <input  class="form-control" type="text" name="codigo" placeholder="INGRESE El CODIGO">
+         
+         <label for="exampleInputEmail1">  NOMBRE DEL LIBRO </label>
+         <input  class="form-control" type="text" name="nombre" placeholder="INGRESE El NOMBRE">
+     
+  
+         
+         <label for="exampleInputEmail1"> TIPO DE PASTA DEL LIBRO </label>
+        
+         <input  color="red" class="form-control" type="tel" name="numero"  placeholder="INGRE EL Tipo De Pasta ">
+         
+         <label for="exampleInputEmail1"> EDITORIAL DEL LIBRO </label>
+         <input  class="form-control" type="text" name="direccion" placeholder="INGRESE La EDITORIAL ">
+          <label for="exampleInputEmail1"> AÑO DE PUBLICACION </label>
+         <input  class="form-control" type="text" name="direccion" placeholder="INGRESE EL AÑO De fabricacion  ">
+         
+     </div>
+    
+               
+            </select><br>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Cancelar</button>
+         </form>     
+    </body>
+</html>
